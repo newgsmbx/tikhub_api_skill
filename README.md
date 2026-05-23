@@ -185,9 +185,11 @@ tikhub_api_skill/
 - **TikHub 官网**: https://www.tikhub.io
 - **API 文档**: https://api.tikhub.io
 - **Apifox 文档**: https://docs.tikhub.io
-- **API 状态监控**: https://monitor.tikhub.io
 - **GitHub**: https://github.com/TikHub
 
+## 感谢：
+**linux.do**:  https://linux.do/
+  
 ## 许可证
 
 本项目仅供学习和参考使用。
