@@ -188,7 +188,7 @@ tikhub_api_skill/
 - **GitHub**: https://github.com/TikHub
 
 ## 感谢：
-**linux.do**:  https://linux.do/
+**linux.do**
   
 ## 许可证
 
