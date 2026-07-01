@@ -194,6 +194,23 @@ python .claude/skills/tikhub-api-helper/api_searcher.py tag:Douyin-Billboard-API
 python .claude/skills/tikhub-api-helper/api_client.py GET /api/v1/youtube/web/get_trending_videos "country=US"
 ```
 
+### Pair With OpenClaw X/Twitter Workflows
+
+TikHub is a good fit for broad public discovery across TikTok, Xiaohongshu,
+YouTube, Twitter/X, Reddit, and other platforms. If the next step requires
+account-scoped X/Twitter work inside OpenClaw, first turn the TikHub results
+into a reviewed source packet, then hand that packet to a dedicated X/Twitter
+plugin.
+
+- Use TikHub for cross-platform discovery and public data lookups.
+- Use an OpenClaw plugin such as TweetClaw for account-backed X/Twitter search,
+  reply discovery, user lookup, monitoring, media-aware workflows, or explicitly
+  approved post and reply actions.
+- Do not copy API tokens, cookies, or session material between tools. Pass only
+  reviewed URLs, post IDs, handles, queries, date ranges, and summaries.
+- Posting, replying, following, direct messages, profile edits, and other write
+  actions must be confirmed again in the destination tool.
+
 ## Project Structure
 
 ```
