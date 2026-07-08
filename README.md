@@ -153,6 +153,20 @@ python .claude/skills/tikhub-api-helper/api_searcher.py tag:Douyin-Billboard-API
 python .claude/skills/tikhub-api-helper/api_client.py GET /api/v1/youtube/web/get_trending_videos "country=CN"
 ```
 
+### 与 OpenClaw X/Twitter 工作流配合
+
+TikHub 适合做多平台公开数据发现，例如跨 TikTok、小红书、YouTube、
+Twitter/X 和 Reddit 查找趋势、账号、视频或帖子。如果工作流后续需要
+OpenClaw 中的账号级 X/Twitter 操作，可以把 TikHub 结果先整理成经过审阅的
+source packet，再交给专门的 X/Twitter 插件处理。
+
+- 使用 TikHub 做跨平台发现和公开数据查询。
+- 使用 TweetClaw 这类 OpenClaw 插件处理账号级 X/Twitter 搜索、回复发现、
+  用户资料查询、监控、媒体相关流程，或经过明确确认的发帖和回复操作。
+- 不要在工具之间复制 API Token、Cookie 或会话材料。只传递已审阅的 URL、
+  帖子 ID、账号、查询词、时间范围和摘要。
+- 发帖、回复、关注、私信、资料修改等写操作必须在目标工具中再次获得用户确认。
+
 ## 项目结构
 
 ```
